@@ -18,7 +18,6 @@ import UserEditScreen from './pages/UserEditScreen'
 import ProductListScreen from './pages/ProductListScreen'
 import ProductEditScreen from './pages/ProductEditScreen'
 import OrderListScreen from './pages/OrderListScreen'
-import ProductCreateScreen from './pages/ProductCreateScreen'
 
 // PAGE LAYOUTS
 import { NavBar } from './layout/NavBar'
@@ -49,7 +48,6 @@ const App = () => {
           exact
         />
         <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
-        {/* <Route path='/admin/product' component={ProductCreateScreen} /> */}
         <Route path='/admin/orderlist' component={OrderListScreen} />
         <Route path='/search/:keyword' component={HomeScreen} exact />
         <Route path='/page/:pageNumber' component={HomeScreen} exact />

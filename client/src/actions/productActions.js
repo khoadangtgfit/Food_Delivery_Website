@@ -107,6 +107,7 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
 }
 
 export const createProduct = () => async (dispatch, getState) => {
+  debugger;
   try {
     dispatch({
       type: PRODUCT_CREATE_REQUEST,

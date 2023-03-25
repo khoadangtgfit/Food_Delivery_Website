@@ -41,7 +41,6 @@ const ProductScreen = ({ history, match }) => {
       dispatch(listProductDetails(match.params.id))
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
     }
-    // eslint-disable-next-line
   }, [dispatch, match, successProductReview])
 
   const addToCartHandler = () => {

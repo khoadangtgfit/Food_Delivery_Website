@@ -30,7 +30,7 @@ const RegisterScreen = ({ location, history }) => {
   const submitHandler = (e) => {
     e.preventDefault()
     if (password !== confirmPassword) {
-      setMessage('Passwords do not match')
+      setMessage('Mật khẩu nhập lại không trùng')
     } else {
       dispatch(register(name, email, password))
     }
