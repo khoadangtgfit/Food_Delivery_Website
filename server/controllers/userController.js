@@ -69,7 +69,6 @@ const getUserProfile = asyncHandler(async (req, res) => {
 })
 
 const updateUserProfile = asyncHandler(async (req, res) => {
-  debugger;
   const user = await User.findById(req.user._id)
 
   if (user) {
@@ -105,7 +104,7 @@ const deleteUser = asyncHandler(async (req, res) => {
 
   if (user) {
     await user.remove()
-    res.json({ message: 'User removed' })
+    res.json({ message: 'Đã xóa' })
   } else {
     res.status(404)
     throw new Error('User not found')
@@ -125,7 +124,6 @@ const getUserById = asyncHandler(async (req, res) => {
 })
 
 const updateUser = asyncHandler(async (req, res) => {
-  debugger;
   const user = await User.findById(req.params.id)
 
   if (user) {

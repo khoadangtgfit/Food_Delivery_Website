@@ -22,7 +22,6 @@ export const NavBar = () => {
     <nav className='navbar navbar-expand-lg navbar-light bg-light fixed-top mb-5'>
       <div className='container'>
         <LinkContainer to='/'>
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className='navbar-brand'>LPK Food</a>
         </LinkContainer>
         <button
@@ -40,9 +39,7 @@ export const NavBar = () => {
           <ul className='navbar-nav ms-auto'>
             <li className='nav-item active'>
               <LinkContainer to='/cart'>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className='nav-link'>
-                  {/* {userInfo ? userInfo.name : <i className='fa fa-user'></i>} */}
                   {userInfo ? (
                     <>
                       <i className='fas fa-shopping-cart'></i> Giỏ Hàng (
@@ -72,17 +69,13 @@ export const NavBar = () => {
                     aria-expanded='false'
                   >
                     {userInfo ? userInfo.name : <i className='fa fa-user'></i>}
-                    {/* <i className='fa fa-user'></i> Me */}
                   </a>
-                  {/* Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! */}
                   <div
                     className='dropdown-menu dropdown-menu-end animate slideIn'
                     aria-labelledby='navbarDropdown'
                   >
                     {userInfo ? (
-                      //   <a className='dropdown-item' href='/'>
-                      //   Another action
-                      // </a>
+
                       <div title={userInfo.name} id='username'>
                         <LinkContainer to='/profile'>
                           <a className='dropdown-item'>Tài khoản</a>
@@ -90,9 +83,7 @@ export const NavBar = () => {
                         <a className='dropdown-item' onClick={logoutHandler}>
                           Đăng xuất
                         </a>
-                        {/* <NavDropdown.Item onClick={logoutHandler}>
-                          Logout
-                        </NavDropdown.Item> */}
+
                       </div>
                     ) : (
                       <LinkContainer to='/login'>
@@ -116,9 +107,7 @@ export const NavBar = () => {
                         </LinkContainer>
                       </>
                     )}
-                    {/* <a className='dropdown-item' href='/'>
-                      Something else here
-                    </a> */}
+
                   </div>
                 </li>
               </ul>

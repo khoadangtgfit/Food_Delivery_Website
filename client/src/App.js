@@ -19,7 +19,6 @@ import ProductListScreen from './pages/ProductListScreen'
 import ProductEditScreen from './pages/ProductEditScreen'
 import OrderListScreen from './pages/OrderListScreen'
 
-// PAGE LAYOUTS
 import { NavBar } from './layout/NavBar'
 import SearchBar from './layout/SearchBar'
 

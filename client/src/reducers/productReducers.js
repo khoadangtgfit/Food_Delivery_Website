@@ -73,7 +73,6 @@ export const productDeleteReducer = (state = {}, action) => {
 }
 
 export const productCreateReducer = (state = {}, action) => {
-  debugger;
   switch (action.type) {
     case PRODUCT_CREATE_REQUEST:
       return { loading: true }
